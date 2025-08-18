@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Seção Superior (Branca) */
+.top-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    line-height: 1.2;
+}
+
+/* Seção Central */
+.main-section {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    max-height: 500px;
+}
+
+/* Formulário de Cadastro (Esquerda) */
+.form-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 0 0 0 20px;
+}
+
+.form-container {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.form-input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 0 2px #ff4444;
+}
+
+/* Imagem da Pizza (Direita) */
+.pizza-section {
+    flex: 1;
+    background-color: #ff1717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pizza-image {
+    max-width: 100%;
+    max-height: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
+}
+
+/* Barra Inferior (Vermelha) */
+.bottom-bar {
+    height: 20px;
+    background-color: #ff4444;
+    flex-shrink: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .main-section {
+        flex-direction: column;
+    }
+    
+    .form-section {
+        border-radius: 0;
+        padding: 30px;
+    }
+    
+    .pizza-section {
+        padding: 30px;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        padding: 30px 15px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .form-container {
+        padding: 30px;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .signup-form {
+        gap: 20px;
+    }
+    
+    .form-input {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 20px 10px;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .form-section {
+        padding: 20px;
+    }
+    
+    .form-container {
+        padding: 25px;
+    }
+    
+    .form-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .signup-form {
+        gap: 15px;
+    }
+    
+    .form-input {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .pizza-section {
+        padding: 20px;
+    }
+    
+    .bottom-bar {
+        height: 15px;
+    }
+}
