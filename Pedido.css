@@ -9,7 +9,10 @@ body {
     background-color: #ffffff;
     min-height: 100vh;
 }
-
+.btn-text > a {
+    color: white;
+    
+}
 /* Header */
 .header {
     padding: 20px 40px;

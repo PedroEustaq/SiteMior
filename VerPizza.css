@@ -10,7 +10,10 @@ body {
     min-height: 100vh;
     padding: 0px;
 }
-
+.btn-text > a {
+    color: white;
+    text-decoration: none;
+}
 header {
     background-color: red;
     height: 10%;
